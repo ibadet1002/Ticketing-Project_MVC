@@ -31,4 +31,8 @@ public abstract class AbstractMapService <T, ID>{
     protected T findById(ID id) {
       return  map.get(id);
     }
+
+    void update(ID id, T object){
+        map.put(id, object);
+    }
 }
